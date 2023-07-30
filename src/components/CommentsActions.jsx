@@ -7,9 +7,9 @@ import { useMainConext } from "../hooks/useContext";
 import "@/css/comment-actions.css";
 
 /* Images */
-const iconReply = "../../public/images/icon-reply.svg";
-const iconDelete = "../../public/images/icon-delete.svg";
-const iconEdit = "../../public/images/icon-edit.svg";
+import iconReply from "../../public/images/icon-reply.svg";
+import iconDelete from "../../public/images/icon-delete.svg";
+import iconEdit from "../../public/images/icon-edit.svg";
 
 function CommentsActions({
   user,
