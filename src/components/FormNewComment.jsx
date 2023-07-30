@@ -88,7 +88,7 @@ function FormNewComment({
     <div className={`container-form ${className}`}>
       <img
         className="avatar-user-current"
-        src="/images/avatars/image-juliusomo.webp"
+        src="/front-comments/images/avatars/image-juliusomo.webp"
         alt="avata-user"
       />
       <form className="form" onSubmit={handelSubmit}>

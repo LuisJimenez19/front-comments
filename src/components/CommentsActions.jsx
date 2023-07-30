@@ -6,6 +6,11 @@ import { useMainConext } from "../hooks/useContext";
 
 import "@/css/comment-actions.css";
 
+/* Images */
+const iconReply = "../../public/images/icon-reply.svg";
+const iconDelete = "../../public/images/icon-delete.svg";
+const iconEdit = "../../public/images/icon-edit.svg";
+
 function CommentsActions({
   user,
   commentId,
@@ -29,14 +34,14 @@ function CommentsActions({
               }}
               className="flex flex-center action action-delete"
             >
-              <img src="/images/icon-delete.svg" alt="icon-delet" />
+              <img src={iconDelete} alt="icon-delet" />
               delete
             </span>
             <span
               onClick={handleEdit}
               className="flex flex-center action action-edit"
             >
-              <img src="/images/icon-edit.svg" alt="icon-edit" />
+              <img src={iconEdit} alt="icon-edit" />
               edit
             </span>
           </>
@@ -51,7 +56,7 @@ function CommentsActions({
               });
             }}
           >
-            <img src="/images/icon-reply.svg" alt="icon-reply" />
+            <img src={iconReply} alt="icon-reply" />
             reply
           </span>
         )}

@@ -67,7 +67,11 @@ function CardComment({
         <div className="card-comment__body flex flex-col">
           <header className="card-comment__header flex justify-between">
             <div className="header_group flex flex-center">
-              <img className="header-avatar" alt={`avatar`} src={user.url} />
+              <img
+                className="header-avatar"
+                alt={`avatar`}
+                src={`/front-comments/${user.url}`}
+              />
               <p className="comment-name">
                 {user.name}{" "}
                 {user._id === CURREND_ID && (
@@ -125,7 +129,6 @@ function CardComment({
       {comment.replies.length !== 0 && (
         <section className="container-replies">
           {comment.replies.map((cm) => {
-            
             return (
               <CardCommentReply
                 getComments={getComments}
